@@ -18,3 +18,8 @@ print(
 print(
     f"Now that you know {StudentEx.student_name}'s grade you can now leave. \nHave a great day! :)"
 )
+
+js = {"Name": StudentEx.student_name,
+      "grades": calculate_total_average(StudentEx.student)}
+with open("student.json", 'w') as f:
+    f.write(json.dumps(js))
