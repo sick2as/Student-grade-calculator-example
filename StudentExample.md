@@ -9,7 +9,7 @@ import StudentEx
 ```
 ## Next
 
-we now need a print function to get all of our data from the other file 
+we now need a print function to get all of our data from the other file and print it for the user. 
 
 ```py
 print(f'Name: {StudentEx.student_name}  \n Class: {StudentEx.student_class} \n Assignments: {StudentEx.assignment_grades} \n Tests: {StudentEx.test_grades} \n')
