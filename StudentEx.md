@@ -11,9 +11,12 @@ student_name = names[random.randint(0, 2)]
 
 Next we need some grades so lets go ahead and program that
 ```py
-assignment_grades = [random.randint(70, 100),random.randint(0, 100),random.randint(0, 100),random.randint(0, 100),]
-test_grades = [random.randint(70, 100), random.randint(70, 100)]
-participation_grade = [random.randint(0, 100),random.randint(0, 100),random.randint(0, 100), ]
+
+rd_1 = random.randint(0, 100) 
+rd_2 = random.randint(70,100)
+assignment_grades = [rd_1] + [rd_2]*2
+test_grades = [rd_2]*2
+participation_grade = [rd_2]*2
 student = [participation_grade, test_grades, assignment_grades]
 ```
 ## Third
@@ -34,15 +37,12 @@ import random
 names = ["Jake", "Jack", "Jason"]
 
 classes = "Math", "Science", "SS", "Writing", "Grammar"
-
+rd_1 = random.randint(0, 100) 
+rd_2 = random.randint(70,100)
+assignment_grades = [rd_1] + [rd_2]*2
+test_grades = [rd_2]*2
+participation_grade = [rd_2]*2
 student_name = names[random.randint(0, 2)]
-
-assignment_grades = [random.randint(70, 100),random.randint(0, 100),random.randint(0, 100),random.randint(0, 100),]
-
-test_grades = [random.randint(70, 100), random.randint(70, 100)]
-
-participation_grade = [random.randint(0, 100),random.randint(0, 100),random.randint(0, 100), ]
-
 student = [participation_grade, test_grades, assignment_grades]
 
 def get_average(a: list):
