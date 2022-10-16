@@ -2,9 +2,6 @@ from imghdr import tests
 import random
 import time
 import json
-print("Disclaimer this is a fake person with fake grades no real person had grades recorded ")
-print("also thank you for using my software By: PTSCODING")
-
 names = ["james", "john", "joe", "Jason", "Mick", "Nina"]
 classes = ['math', 'science', 'social studies', 'reading', 'grammar']
 
@@ -30,20 +27,4 @@ def assign_letter_grade(score):
         return "D"
     else:
         return "F"
-
-def get_all_studinfo():
-    print(
-        f'Name: {student["name"]}  \n Class {student["tclass"]} \n Assignments: {student["assignment"]} \n Tests: {student["test"]} \n'
-    )
-    print(
-        f"{student['name']}'s averages in every type of class is ",
-        round(calculate_total_average(student)), "\n"
-    )
-    print(
-        f"{student['name']}'s letter grade is ",
-        assign_letter_grade((calculate_total_average(student))), "\n"
-    )
-    print(
-        f"Now that you know {student['name']}'s grade you can now leave. \nHave a great day! :)")
-
 
