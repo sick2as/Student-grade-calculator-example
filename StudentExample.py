@@ -1,7 +1,5 @@
 import StudentEx
-print("Disclaimer your data is not recorded if you have heard that it is a lie"
-      )
-print("also thank you for using my software By: PTSCODING")
+print("Thank you for using my coding By: sick2as")
 
 print(
     f'Name: {StudentEx.student_name}  \n Class: {StudentEx.student_class} \n Assignments: {StudentEx.assignment_grades} \n Tests: {StudentEx.test_grades} \n'
